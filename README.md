@@ -69,7 +69,7 @@ Only Windows
 如下圖所示，將env.json打開 <br>
 把剛剛得知的cookie放在value欄位
 
-![step5](/images/env.png)
+![step5](/images/cookie_step5.png)
 
 ### [1.3] 設定下載路徑
 
@@ -87,15 +87,17 @@ Only Windows
 
 >以這張圖來說，作者的下載路徑是 C:\Users\User\Downloads
 
-#### [step4] 將參數放入 **env.json**
+#### [step4] 將路徑參數放入 **env.json**
 
 ![step4](/images/download_step4.png)
+
 > 注意 !!! 要將下載路徑中全部的單斜線 ( \\ ) 換成雙斜線 ( \\\\ ) <br>
 >  比方說 : C:\Users\User\Downloads -> C:\\\Users\\\User\\\Downloads
 
 ### [1.4] 將Download底下的文件全部清光
 
-* 如下圖
+如下圖
+
 ![step1](/images/clean_download.png)
 
 
