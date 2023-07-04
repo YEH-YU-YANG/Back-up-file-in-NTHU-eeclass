@@ -107,34 +107,66 @@ Only Windows
 
 ## [2] 開始使用
 
-#### [step1] 打開專案資料夾
+#### [step1] 紀錄專案資料夾路徑
 
-直接點擊 `main.exe` 這個檔案就會開始執行。
+![Alt text](./images/start_step1.png)
 
-![Alt text](/images/main_exe.png)
+
+打開專案資料夾 -> 對圖中黃線的欄位按一下 -> 紀錄這個路徑
+> 以這張圖來說，作者的專案路徑是 <br>
+>  `C:\Users\USER\Desktop\Back-up-file-in-NTHU-eeclass-version_114`
+
+
+#### [step2] 以系統管理員的身分開啟cmd
+
+![Alt text](./images/start_step2.png)
+
+尋找你的 Command line (cmd) -> 以系統管理員身分執行
+
+#### [step3] 開始爬蟲 !
+
+![Alt text](./images/start_step3.png)
+
+輸入指令，分別是 : <br>
+
+* 第一個指令 `cd 剛剛紀錄的專案路徑` 。<br>
+  舉例: `cd C:\Users\USER\Desktop\Back-up-file-in-NTHU-eeclass-version_114`。<br>
+  > 注意 `cd` 跟路徑之間要有空格。這個指令代表進入專案
+
+* 第二個指令 `main.exe`。<br>
+  > 這個指令代表開始爬蟲 !
+
+#### [step4] 保持畫面乾淨
+
+執行過程中請確保以下事項:
+* 確保畫面裡只有 Google Chrome 的畫面。<br>執行 `main.exe` 時會跳出小黑框，請不要讓它顯示在畫面之中
+* 不要移動滑鼠，程式會控制滑鼠感應，被亂移動的話會出大事
+* 確保網路順暢，檔案下載的速度取決於您的網路有多快
+
+#### [step5] 程式結束後檔案會在 `download_file` 資料夾之下
+
+![](/images/download_file.png)
+
+#### [warning] 可能會有的Bug
 
 如果過多檔案下載-掃描病毒失敗，詳見底下的 [修復Bug3.1] 內容。
 
 如果執行後發現會有個視窗瞬間跳出來又關閉，並且程式停止，詳見底下的 [修復Bug3.2] 內容。
 
-#### [step2] 保持畫面乾淨
-
-執行過程中請確保以下事項:
-* 確保畫面裡只有 Google Chrome 的畫面。<br>點擊 `main.exe` 時會跳出小黑框，請不要讓它顯示在畫面之中
-* 不要移動滑鼠，程式會控制滑鼠感應，被亂移動的話會出大事
-* 確保網路順暢，檔案下載的速度取決於您的網路有多快
-
-#### [step3] 程式結束後檔案會在 `download_file` 資料夾之下
-
-![](/images/download_file.png)
 
 ## [3] 修復 Bug
 
-### [3.1] 下載-掃描病毒失敗
+### [3.1] Windows 已保護您的電腦
+
+![Alt text](./images/warning.png)
+
+這很正常，點選其他資訊 -> 仍要執行。
+
+### [3.2] 下載-掃描病毒失敗
 
 根據這篇文章的內容[修復 Google Chrome 病毒掃描失敗錯誤的 5 大方法](https://www.a7la-home.com/zh-TW/top-ways-to-fix-virus-scan-failed-error-in-google-chrome) 選擇第四個方法執行。
 
-### [3.2] Chromedriver閃退、自動關閉
+### [3.3] Chromedriver閃退、自動關閉
 
 順利執行的情況下，Chrome driver會一直跳轉頁面，直到全部的檔案下載完畢。
 順勢閃退、自動關閉，代表您選擇的Chrome driver和您現在的Google版本不一致，請重新安裝正確的版本。
