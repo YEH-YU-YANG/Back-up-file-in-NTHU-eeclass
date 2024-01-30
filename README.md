@@ -1,3 +1,36 @@
+- [Back up HW in NTHU eeclass](#back-up-hw-in-nthu-eeclass)
+  - [目的](#目的)
+  - [執行影片](#執行影片)
+  - [使用限制](#使用限制)
+  - [前置作業](#前置作業)
+    - [確認 Google Chrome 版本](#確認-google-chrome-版本)
+      - [\[step1\] 點選右上角的3顆點點 -\> 說明 -\> 關於 Google Crome](#step1-點選右上角的3顆點點---說明---關於-google-crome)
+      - [\[step2\] 可以在下圖方框中查看目前使用的 $Google$ 版本 ](#step2-可以在下圖方框中查看目前使用的-google-版本-)
+      - [\[step3\] 下載本專案](#step3-下載本專案)
+    - [紀錄登入 $eeclass$ 時使用的 $cookie$](#紀錄登入-eeclass-時使用的-cookie)
+      - [\[step1\] 登入eeclass](#step1-登入eeclass)
+      - [\[step2\] 在頁面上按壓鍵盤 ctrl + shift + i -\> 選擇 Network欄位](#step2-在頁面上按壓鍵盤-ctrl--shift--i---選擇-network欄位)
+      - [\[step3\] 刷新頁面會跑出載入頁面時使用的資料](#step3-刷新頁面會跑出載入頁面時使用的資料)
+      - [\[step4\] 紀錄cookie](#step4-紀錄cookie)
+      - [\[step5\] 將參數放入 **env.json**](#step5-將參數放入-envjson)
+    - [設定下載路徑](#設定下載路徑)
+      - [\[step1\] 點擊電腦下載檔案後被放置的資料夾](#step1-點擊電腦下載檔案後被放置的資料夾)
+      - [\[step2\] 在資料夾內部點擊滑鼠右鍵 -\> 點擊內容](#step2-在資料夾內部點擊滑鼠右鍵---點擊內容)
+      - [\[step3\] 紀錄您電腦的下載路徑](#step3-紀錄您電腦的下載路徑)
+      - [\[step4\] 將路徑參數放入 **env.json**](#step4-將路徑參數放入-envjson)
+    - [將Download底下的文件全部清光](#將download底下的文件全部清光)
+  - [開始使用](#開始使用)
+      - [\[step1\] 紀錄專案資料夾路徑](#step1-紀錄專案資料夾路徑)
+      - [\[step2\] 以系統管理員的身分開啟cmd](#step2-以系統管理員的身分開啟cmd)
+      - [\[step3\] 開始爬蟲 !](#step3-開始爬蟲-)
+      - [\[step4\] 保持畫面乾淨](#step4-保持畫面乾淨)
+      - [\[step5\] 程式結束後檔案會在 `download_file` 資料夾之下](#step5-程式結束後檔案會在-download_file-資料夾之下)
+      - [\[warning\] 可能會有的Bug](#warning-可能會有的bug)
+  - [修復 Bug](#修復-bug)
+    - [Windows 已保護您的電腦](#windows-已保護您的電腦)
+    - [下載-掃描病毒失敗](#下載-掃描病毒失敗)
+    - [Chromedriver閃退、自動關閉](#chromedriver閃退自動關閉)
+
 # Back up HW in NTHU eeclass
 
 ## 目的
@@ -11,15 +44,13 @@
 
 ![](/images/demo.gif)
 
-## [0] 使用限制
+## 使用限制
 
-### [0.1] 系統限制
-Only Windows
-****
+必須使用 **Google Chrome**
 
-## [1] 前置作業
+## 前置作業
 
-### [1.1] 確認 Google Chrome 版本
+### 確認 Google Chrome 版本
 #### [step1] 點選右上角的3顆點點 -> 說明 -> 關於 Google Crome
 ![step1](/images/chrome_version_step1.png)
 
@@ -30,20 +61,30 @@ Only Windows
 
 #### [step3] 下載本專案
 
-根據自己的Google版本，點選對應的分支 <br>
-> 作者是114版，因此這邊選擇 v114，v114 代表version 114 <br>
+根據自己的 Google 版本，下載對應的版本 <br>
+> 作者是Google 114版，因此這邊選擇 v114，v114 代表version 114 <br>
 > 請根據自己的版本選擇對應的資料夾
 
-![step3](/images/chrome_version_step3.png)
+| 版本                    | 文件大小 | 載點     |
+|------------------------|-----------|--------------|
+| ChromeDriver_v110 |  75.2 MB  | [**Win64_ChromeDriver_v110**][Win64_ChromeDriver_v110] |
+| ChromeDriver_v111 |  75.2 MB  | [**Win64_ChromeDriver_v111**][Win64_ChromeDriver_v111] |
+| ChromeDriver_v112 |  75.2 MB  | [**Win64_ChromeDriver_v112**][Win64_ChromeDriver_v112] |
+| ChromeDriver_v113 |  75.2 MB  | [**Win64_ChromeDriver_v113**][Win64_ChromeDriver_v113] |
+| ChromeDriver_v114 |  74.7 MB  | [**Win64_ChromeDriver_v114**][Win64_ChromeDriver_v114] |
+| ChromeDriver_v121 |  76.5 MB  | [**Win64_ChromeDriver_v121**][Win64_ChromeDriver_v121] |
 
-#### [step4] 點進分支後下載
+[Win64_ChromeDriver_v110]: https://github.com/YEH-YU-YANG/Back-up-file-in-NTHU-eeclass/releases/download/v1.0/Win64_ChromeDriver_v110.zip
+[Win64_ChromeDriver_v111]: https://github.com/YEH-YU-YANG/Back-up-file-in-NTHU-eeclass/releases/download/v1.0/Win64_ChromeDriver_v111.zip
+[Win64_ChromeDriver_v112]: https://github.com/YEH-YU-YANG/Back-up-file-in-NTHU-eeclass/releases/download/v1.0/Win64_ChromeDriver_v112.zip
+[Win64_ChromeDriver_v113]: https://github.com/YEH-YU-YANG/Back-up-file-in-NTHU-eeclass/releases/download/v1.0/Win64_ChromeDriver_v113.zip
+[Win64_ChromeDriver_v114]: https://github.com/YEH-YU-YANG/Back-up-file-in-NTHU-eeclass/releases/download/v1.0/Win64_ChromeDriver_v114.zip
+[Win64_ChromeDriver_v121]: https://github.com/YEH-YU-YANG/Back-up-file-in-NTHU-eeclass/releases/download/v1.0/Win64_ChromeDriver_v121.zip
 
-![step4](/images/chrome_version_step4.png)
+> 解壓縮該檔案 -> 把它放到 Download 資料夾以外的地方。 <br>
+> 這步驟非常重要 !
 
-點選綠色的code按鈕 -> Download ZIP -> 解壓縮該檔案 -> 把它放到 Download 資料夾以外的地方 
-> 這步驟非常重要!
-
-### [1.2] 紀錄登入 $eeclass$ 時使用的 $cookie$
+### 紀錄登入 $eeclass$ 時使用的 $cookie$
 
 #### [step1] 登入eeclass
   
@@ -75,7 +116,7 @@ Only Windows
 
 ![step5](/images/cookie_step5.png)
 
-### [1.3] 設定下載路徑
+### 設定下載路徑
 
 #### [step1] 點擊電腦下載檔案後被放置的資料夾
   
@@ -98,14 +139,14 @@ Only Windows
 > 注意 !!! 要將下載路徑中全部的單斜線 ( \\ ) 換成雙斜線 ( \\\\ ) <br>
 >  比方說 : C:\Users\User\Downloads -> C:\\\Users\\\User\\\Downloads
 
-### [1.4] 將Download底下的文件全部清光
+### 將Download底下的文件全部清光
 
 如下圖
 
 ![step1](/images/clean_download.png)
 
 
-## [2] 開始使用
+## 開始使用
 
 #### [step1] 紀錄專案資料夾路徑
 
@@ -154,19 +195,19 @@ Only Windows
 如果執行後發現會有個視窗瞬間跳出來又關閉，並且程式停止，詳見底下的 [修復Bug3.3] 內容。
 
 
-## [3] 修復 Bug
+## 修復 Bug
 
-### [3.1] Windows 已保護您的電腦
+### Windows 已保護您的電腦
 
 ![Alt text](./images/warning.png)
 
 這很正常，點選其他資訊 -> 仍要執行。
 
-### [3.2] 下載-掃描病毒失敗
+### 下載-掃描病毒失敗
 
 根據這篇文章的內容[修復 Google Chrome 病毒掃描失敗錯誤的 5 大方法](https://www.a7la-home.com/zh-TW/top-ways-to-fix-virus-scan-failed-error-in-google-chrome) 選擇第四個方法執行。
 
-### [3.3] Chromedriver閃退、自動關閉
+### Chromedriver閃退、自動關閉
 
 順利執行的情況下，Chrome driver會一直跳轉頁面，直到全部的檔案下載完畢。
 順勢閃退、自動關閉，代表您選擇的Chrome driver和您現在的Google版本不一致，請重新安裝正確的版本。
