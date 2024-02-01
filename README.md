@@ -5,9 +5,9 @@
   - [前置作業](#前置作業)
     - [確認 Google Chrome 版本](#確認-google-chrome-版本)
       - [\[step1\] 點選右上角的3顆點點 -\> 說明 -\> 關於 Google Crome](#step1-點選右上角的3顆點點---說明---關於-google-crome)
-      - [\[step2\] 可以在下圖方框中查看目前使用的 $Google$ 版本 ](#step2-可以在下圖方框中查看目前使用的-google-版本-)
+      - [\[step2\] 可以在下圖方框中查看目前使用的 Google 版本 ](#step2-可以在下圖方框中查看目前使用的-google-版本-)
       - [\[step3\] 下載本專案](#step3-下載本專案)
-    - [紀錄登入 $eeclass$ 時使用的 $cookie$](#紀錄登入-eeclass-時使用的-cookie)
+    - [紀錄登入 eeclass 時使用的 cookie](#紀錄登入-eeclass-時使用的-cookie)
       - [\[step1\] 登入eeclass](#step1-登入eeclass)
       - [\[step2\] 在頁面上按壓鍵盤 ctrl + shift + i -\> 選擇 Network欄位](#step2-在頁面上按壓鍵盤-ctrl--shift--i---選擇-network欄位)
       - [\[step3\] 刷新頁面會跑出載入頁面時使用的資料](#step3-刷新頁面會跑出載入頁面時使用的資料)
@@ -24,7 +24,7 @@
       - [\[step2\] 以系統管理員的身分開啟cmd](#step2-以系統管理員的身分開啟cmd)
       - [\[step3\] 開始爬蟲 !](#step3-開始爬蟲-)
       - [\[step4\] 保持畫面乾淨](#step4-保持畫面乾淨)
-      - [\[step5\] 程式結束後檔案會在 `download_file` 資料夾之下](#step5-程式結束後檔案會在-download_file-資料夾之下)
+      - [\[step5\] 程式結束後檔案會在 download\_file 資料夾之下](#step5-程式結束後檔案會在-download_file-資料夾之下)
       - [\[warning\] 可能會有的Bug](#warning-可能會有的bug)
   - [修復 Bug](#修復-bug)
     - [Windows 已保護您的電腦](#windows-已保護您的電腦)
@@ -55,7 +55,7 @@
 ![step1](/images/chrome_version_step1.png)
 
 
-#### [step2] 可以在下圖方框中查看目前使用的 $Google$ 版本 <br>
+#### [step2] 可以在下圖方框中查看目前使用的 Google 版本 <br>
   e.g. 作者現在的版本是 **114.5735.199** ，也就是 114版
 ![step2](/images/chrome_version_step2.png)
 
@@ -84,7 +84,7 @@
 > 解壓縮該檔案 -> 把它放到 Download 資料夾以外的地方。 <br>
 > 這步驟非常重要 !
 
-### 紀錄登入 $eeclass$ 時使用的 $cookie$
+### 紀錄登入 eeclass 時使用的 cookie
 
 #### [step1] 登入eeclass
   
@@ -184,7 +184,7 @@
 * 不要移動滑鼠，程式會控制滑鼠感應，被亂移動的話會出大事
 * 確保網路順暢，檔案下載的速度取決於您的網路有多快
 
-#### [step5] 程式結束後檔案會在 `download_file` 資料夾之下
+#### [step5] 程式結束後檔案會在 download_file 資料夾之下
 
 ![](/images/download_file.png)
 
